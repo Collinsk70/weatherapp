@@ -45,7 +45,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>Weather App</h1>
+      <h1>My Weather App</h1>
       <SearchBar city={city} setCity={setCity} fetchWeather={fetchWeather} />
       {isLoading && <Loader />}  {/* Show loader when loading */}
       {error && <ErrorMessage message={error} />}
