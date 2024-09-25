@@ -1,0 +1,96 @@
+.app {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f4f8; /* Light background color for the app */
+  font-family: Arial, sans-serif; /* Clean font for the app */
+  min-height: 100vh; /* Full height to center elements vertically */
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db; /* Button color */
+  color: white; /* Text color for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+h1 {
+  font-size: 36px; /* Larger font size for prominence */
+  font-weight: 600; /* Semi-bold weight for better visibility */
+  color: #2c3e50; /* Darker color for contrast */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px; /* Fixed width for the weather card */
+  margin: 20px auto; /* Center the card horizontally */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  background-color: white; /* White background for the card */
+  transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+.weather-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.weather-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50; /* Darker text color for the heading */
+}
+
+.weather-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-card p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #34495e; /* Softer color for paragraph text */
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
